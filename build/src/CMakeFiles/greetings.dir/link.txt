@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -dynamiclib -Wl,-headerpad_max_install_names -o libgreetings.dylib -install_name @rpath/libgreetings.dylib CMakeFiles/greetings.dir/good_morning.cpp.o CMakeFiles/greetings.dir/hello.cpp.o 
