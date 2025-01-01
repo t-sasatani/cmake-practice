@@ -1,6 +1,6 @@
 /Users/takuya/Git/cmake-practice/build/CMakeFiles/edit_cache.dir
 /Users/takuya/Git/cmake-practice/build/CMakeFiles/rebuild_cache.dir
-/Users/takuya/Git/cmake-practice/build/test/CMakeFiles/a.out.dir
+/Users/takuya/Git/cmake-practice/build/test/CMakeFiles/test_cmake.dir
 /Users/takuya/Git/cmake-practice/build/test/CMakeFiles/edit_cache.dir
 /Users/takuya/Git/cmake-practice/build/test/CMakeFiles/rebuild_cache.dir
 /Users/takuya/Git/cmake-practice/build/src/CMakeFiles/greetings.dir

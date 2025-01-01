@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named a.out
+# Target rules for targets named test_cmake
 
 # Build rule for target.
-a.out: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 a.out
-.PHONY : a.out
+test_cmake: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_cmake
+.PHONY : test_cmake
 
 # fast build rule for target.
-a.out/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/a.out.dir/build.make test/CMakeFiles/a.out.dir/build
-.PHONY : a.out/fast
+test_cmake/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_cmake.dir/build.make test/CMakeFiles/test_cmake.dir/build
+.PHONY : test_cmake/fast
 
 #=============================================================================
 # Target rules for targets named greetings
@@ -150,8 +150,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... a.out"
 	@echo "... greetings"
+	@echo "... test_cmake"
 .PHONY : help
 
 

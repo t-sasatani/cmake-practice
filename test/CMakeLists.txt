@@ -1,3 +1,3 @@
-add_executable(a.out main.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 
-target_link_libraries(a.out greetings)
+target_link_libraries(${PROJECT_NAME} greetings)

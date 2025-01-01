@@ -117,25 +117,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/a.out.dir/rule:
-	cd /Users/takuya/Git/cmake-practice/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/a.out.dir/rule
-.PHONY : test/CMakeFiles/a.out.dir/rule
+test/CMakeFiles/test_cmake.dir/rule:
+	cd /Users/takuya/Git/cmake-practice/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_cmake.dir/rule
+.PHONY : test/CMakeFiles/test_cmake.dir/rule
 
 # Convenience name for target.
-a.out: test/CMakeFiles/a.out.dir/rule
-.PHONY : a.out
+test_cmake: test/CMakeFiles/test_cmake.dir/rule
+.PHONY : test_cmake
 
 # fast build rule for target.
-a.out/fast:
-	cd /Users/takuya/Git/cmake-practice/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/a.out.dir/build.make test/CMakeFiles/a.out.dir/build
-.PHONY : a.out/fast
+test_cmake/fast:
+	cd /Users/takuya/Git/cmake-practice/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_cmake.dir/build.make test/CMakeFiles/test_cmake.dir/build
+.PHONY : test_cmake/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	cd /Users/takuya/Git/cmake-practice/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/a.out.dir/build.make test/CMakeFiles/a.out.dir/main.cpp.o
+	cd /Users/takuya/Git/cmake-practice/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_cmake.dir/build.make test/CMakeFiles/test_cmake.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -143,7 +143,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /Users/takuya/Git/cmake-practice/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/a.out.dir/build.make test/CMakeFiles/a.out.dir/main.cpp.i
+	cd /Users/takuya/Git/cmake-practice/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_cmake.dir/build.make test/CMakeFiles/test_cmake.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -151,7 +151,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /Users/takuya/Git/cmake-practice/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/a.out.dir/build.make test/CMakeFiles/a.out.dir/main.cpp.s
+	cd /Users/takuya/Git/cmake-practice/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_cmake.dir/build.make test/CMakeFiles/test_cmake.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -162,7 +162,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... a.out"
+	@echo "... test_cmake"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
