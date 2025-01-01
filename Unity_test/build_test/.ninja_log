@@ -1,0 +1,9 @@
+# ninja log v5
+1	53	1735742096932490031	test/suite_stdio/CMakeFiles/suite_stdio_app.dir/TestSprintf_Runner.c.o	1808fd1a3da07ca0
+1	53	1735742096932490323	test/suite_stdio/CMakeFiles/suite_stdio_app.dir/suite_stdio.c.o	e31da3332e8b2a92
+1	53	1735742096933111562	test/suite_stdio/CMakeFiles/suite_stdio_app.dir/TestSprintf.c.o	a476a12f48ee61d8
+1	53	1735742096933716843	CMakeFiles/Unity.dir/Users/takuya/Git/cmake-practice/Unity/extras/memory/src/unity_memory.c.o	8c162cac3dbe5854
+1	54	1735742096934451080	CMakeFiles/Unity.dir/Users/takuya/Git/cmake-practice/Unity/extras/fixture/src/unity_fixture.c.o	7fd1a8fcf950151d
+1	63	1735742096940376602	CMakeFiles/Unity.dir/Users/takuya/Git/cmake-practice/Unity/src/unity.c.o	421ff6303c43be60
+63	89	1735742096971114000	libUnity.a	3fdfe248c669045f
+89	129	1735742097005618637	test/suite_stdio/suite_stdio_app	807c5ec790885642

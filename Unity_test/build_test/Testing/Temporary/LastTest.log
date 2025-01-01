@@ -1,0 +1,24 @@
+Start testing: Jan 01 23:35 JST
+----------------------------------------------------------
+1/1 Testing: suite_stdio_test
+1/1 Test: suite_stdio_test
+Command: "/Users/takuya/Git/cmake-practice/Unity_test/build_test/test/suite_stdio/suite_stdio_app"
+Directory: /Users/takuya/Git/cmake-practice/Unity_test/build_test/test/suite_stdio
+"suite_stdio_test" start time: Jan 01 23:35 JST
+Output:
+----------------------------------------------------------
+Unity test run 1 of 1
+..
+
+-----------------------
+2 Tests 0 Failures 0 Ignored 
+OK
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"suite_stdio_test" end time: Jan 01 23:35 JST
+"suite_stdio_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 01 23:35 JST
