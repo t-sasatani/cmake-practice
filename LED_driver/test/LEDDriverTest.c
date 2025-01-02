@@ -102,3 +102,41 @@ IGNORE_TEST(LEDDriver, OutOfBoundsToDo)
     LEDDriver_TurnOn(0);
     TEST_ASSERT_EQUAL_HEX16(0, virtualLeds);
 }
+
+TEST(LEDDriver, IsOn)
+{
+    TEST_ASSERT_FALSE(LEDDriver_IsOn(11));
+    LEDDriver_TurnOn(11);
+    TEST_ASSERT_TRUE(LEDDriver_IsOn(11));
+}
+
+TEST(LEDDriver, IsOff)
+{
+    TEST_ASSERT_TRUE(LEDDriver_IsOff(12));
+    LEDDriver_TurnOn(12);
+    TEST_ASSERT_FALSE(LEDDriver_IsOff(12));
+}
+
+TEST(LEDDriver, OutOfBoundsLedsAreAlwaysOff)
+{
+    TEST_ASSERT_TRUE(LEDDriver_IsOff(0));
+    TEST_ASSERT_TRUE(LEDDriver_IsOff(17));
+
+    TEST_ASSERT_FALSE(LEDDriver_IsOn(0));
+    TEST_ASSERT_FALSE(LEDDriver_IsOn(17));
+}
+
+TEST(LEDDriver, TurnOffMultipleLeds)
+{
+    LEDDriver_TurnAllOn();
+    LEDDriver_TurnOff(9);
+    LEDDriver_TurnOff(8);
+    TEST_ASSERT_EQUAL_HEX16((~0x180) & 0xffff, virtualLeds);
+}
+
+TEST(LEDDriver, AllOff)
+{
+    LEDDriver_TurnAllOn();
+    LEDDriver_TurnAllOff();
+    TEST_ASSERT_EQUAL_HEX16(0, virtualLeds);
+}

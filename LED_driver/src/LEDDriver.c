@@ -72,3 +72,23 @@ void LEDDriver_TurnAllOn(void)
     ledsImage = ALL_LEDS_ON;
     updateHardware();
 }
+
+void LEDDriver_TurnAllOff(void)
+{
+    ledsImage = ALL_LEDS_OFF;
+    updateHardware();
+}
+
+bool LEDDriver_IsOn(int ledNumber)
+{
+    if (IsLedOutOfBounds(ledNumber))
+        return false;
+    return ledsImage & convertLedNumberToBit(ledNumber);
+}
+
+bool LEDDriver_IsOff(int ledNumber)
+{
+    if (IsLedOutOfBounds(ledNumber))
+        return true;
+    return !LEDDriver_IsOn(ledNumber);
+}
