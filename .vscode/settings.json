@@ -1,0 +1,10 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".*\\/LED_driver\\/.*",
+                "cmd": "${workspaceFolder}/LED_driver/build_and_test.sh"
+            }
+        ]
+    }
+}
