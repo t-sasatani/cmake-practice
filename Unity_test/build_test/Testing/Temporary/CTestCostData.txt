@@ -1,2 +1,2 @@
-suite_stdio_test 1 0.246627
+LEDDriverTest 1 0.24889
 ---

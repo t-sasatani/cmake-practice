@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/takuya/Git/cmake-practice/Unity_test/build_test/test/cmake_install.cmake")
+  include("/Users/takuya/Git/cmake-practice/Unity_test/build_test/LED_driver/cmake_install.cmake")
 
 endif()
 

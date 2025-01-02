@@ -21,7 +21,8 @@ elseif(TARGET_GROUP STREQUAL test)
         ../Unity/extras/memory/src
     )
 
-    add_subdirectory(test)
+    #add_subdirectory(test)
+    add_subdirectory(LED_driver)
 
 else()
     message(FATAL_ERROR "Given TARGET_GROUP unknown")

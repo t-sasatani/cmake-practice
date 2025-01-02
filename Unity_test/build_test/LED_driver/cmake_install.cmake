@@ -1,4 +1,4 @@
-# Install script for directory: /Users/takuya/Git/cmake-practice/Unity_test/test/suite_stdio
+# Install script for directory: /Users/takuya/Git/cmake-practice/Unity_test/LED_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
